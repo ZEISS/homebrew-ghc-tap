@@ -5,23 +5,23 @@
 class Ghc < Formula
   desc ""
   homepage "https://zeiss.github.io/ghc/"
-  version "0.1.1"
+  version "0.1.2"
   license "APACHE-2.0"
 
   depends_on "go" => :optional
 
   on_macos do
     on_intel do
-      url "https://github.com/ZEISS/ghc/releases/download/v0.1.1/ghc_0.1.1_darwin_amd64.tar.gz"
-      sha256 "0b5492615cd7c7cc83c7d9e8befffdbcd9c7be27e6b3c416c1ac8234297e4d02"
+      url "https://github.com/ZEISS/ghc/releases/download/v0.1.2/ghc_0.1.2_darwin_amd64.tar.gz"
+      sha256 "b65a183afb611320d941b2d1032dd22e5a7169bab04342054a94bb6ed458de53"
 
       def install
         bin.install "ghc"
       end
     end
     on_arm do
-      url "https://github.com/ZEISS/ghc/releases/download/v0.1.1/ghc_0.1.1_darwin_arm64.tar.gz"
-      sha256 "f62b5a1b3768223675c4e565db4e07d41bf74741a37e38a34c81f851415605a8"
+      url "https://github.com/ZEISS/ghc/releases/download/v0.1.2/ghc_0.1.2_darwin_arm64.tar.gz"
+      sha256 "5501cfba5dc87b6522dee902076e16139a105a32e7e15e5f353450461008ae9a"
 
       def install
         bin.install "ghc"
@@ -32,8 +32,8 @@ class Ghc < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ZEISS/ghc/releases/download/v0.1.1/ghc_0.1.1_linux_amd64.tar.gz"
-        sha256 "bfe9fae0ed612d56731a1d826c2114c4aefff14885561606967270052c5dd4e3"
+        url "https://github.com/ZEISS/ghc/releases/download/v0.1.2/ghc_0.1.2_linux_amd64.tar.gz"
+        sha256 "8b9b8af24a2a6a34a59b84046bde4eda4eba1043866d75ab81ee97f8270759c2"
 
         def install
           bin.install "ghc"
@@ -42,8 +42,8 @@ class Ghc < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/ZEISS/ghc/releases/download/v0.1.1/ghc_0.1.1_linux_arm.tar.gz"
-        sha256 "ad8beb8d35582a8cc69c0b8da665ae78b092de99337584b86132ae25361fc745"
+        url "https://github.com/ZEISS/ghc/releases/download/v0.1.2/ghc_0.1.2_linux_arm.tar.gz"
+        sha256 "44ee469ccf04852b164d00a2367b656a8bb3f75ac3f8cc5f34daf87cd00dafab"
 
         def install
           bin.install "ghc"
@@ -52,8 +52,8 @@ class Ghc < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ZEISS/ghc/releases/download/v0.1.1/ghc_0.1.1_linux_arm64.tar.gz"
-        sha256 "71b1abc3d487843cbeeb178c600d20e1bee3556b628e31db47887d0b9d3289cc"
+        url "https://github.com/ZEISS/ghc/releases/download/v0.1.2/ghc_0.1.2_linux_arm64.tar.gz"
+        sha256 "629f4b8c555532d3321723fdc4ef187529c34ea0802a57ee647769e74230492c"
 
         def install
           bin.install "ghc"
